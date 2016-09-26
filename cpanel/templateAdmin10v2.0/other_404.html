@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+ <title>Administrator 10</title>
+
+ <link href="css/styles.css" rel="stylesheet" type="text/css" />
+ <!--[if IE]> <link href="css/ie.css" rel="stylesheet" type="text/css"> <![endif]-->
+
+ <script type="text/javascript" src="js/files/jquery.min.1.7.js"></script>
+
+ <script type="text/javascript" src="js/plugins/forms/ui.spinner.js"></script>
+ <script type="text/javascript" src="js/plugins/forms/jquery.mousewheel.js"></script>
+
+ <script type="text/javascript" src="js/files/jquery-ui.min.1.8.js"></script>
+
+ <script type="text/javascript" src="js/plugins/charts/excanvas.min.js"></script>
+ <script type="text/javascript" src="js/plugins/charts/jquery.flot.js"></script>
+ <script type="text/javascript" src="js/plugins/charts/jquery.flot.orderBars.js"></script>
+ <script type="text/javascript" src="js/plugins/charts/jquery.flot.pie.js"></script>
+ <script type="text/javascript" src="js/plugins/charts/jquery.flot.resize.js"></script>
+ <script type="text/javascript" src="js/plugins/charts/jquery.sparkline.min.js"></script>
+
+ <script type="text/javascript" src="js/plugins/tables/jquery.dataTables.js"></script>
+ <script type="text/javascript" src="js/plugins/tables/jquery.sortable.js"></script>
+ <script type="text/javascript" src="js/plugins/tables/jquery.resizable.js"></script>
+
+ <script type="text/javascript" src="js/plugins/forms/autogrowtextarea.js"></script>
+ <script type="text/javascript" src="js/plugins/forms/jquery.uniform.js"></script>
+ <script type="text/javascript" src="js/plugins/forms/jquery.inputlimiter.min.js"></script>
+ <script type="text/javascript" src="js/plugins/forms/jquery.tagsinput.min.js"></script>
+ <script type="text/javascript" src="js/plugins/forms/jquery.maskedinput.min.js"></script>
+ <script type="text/javascript" src="js/plugins/forms/jquery.autotab.js"></script>
+ <script type="text/javascript" src="js/plugins/forms/jquery.chosen.min.js"></script>
+ <script type="text/javascript" src="js/plugins/forms/jquery.dualListBox.js"></script>
+ <script type="text/javascript" src="js/plugins/forms/jquery.cleditor.js"></script>
+ <script type="text/javascript" src="js/plugins/forms/jquery.ibutton.js"></script>
+ <script type="text/javascript" src="js/plugins/forms/jquery.validationEngine-en.js"></script>
+ <script type="text/javascript" src="js/plugins/forms/jquery.validationEngine.js"></script>
+
+ <script type="text/javascript" src="js/plugins/uploader/plupload.js"></script>
+ <script type="text/javascript" src="js/plugins/uploader/plupload.html4.js"></script>
+ <script type="text/javascript" src="js/plugins/uploader/plupload.html5.js"></script>
+ <script type="text/javascript" src="js/plugins/uploader/jquery.plupload.queue.js"></script>
+
+ <script type="text/javascript" src="js/plugins/wizards/jquery.form.wizard.js"></script>
+ <script type="text/javascript" src="js/plugins/wizards/jquery.validate.js"></script>
+ <script type="text/javascript" src="js/plugins/wizards/jquery.form.js"></script>
+
+ <script type="text/javascript" src="js/plugins/ui/jquery.collapsible.min.js"></script>
+ <script type="text/javascript" src="js/plugins/ui/jquery.breadcrumbs.js"></script>
+ <script type="text/javascript" src="js/plugins/ui/jquery.tipsy.js"></script>
+ <script type="text/javascript" src="js/plugins/ui/jquery.progress.js"></script>
+ <script type="text/javascript" src="js/plugins/ui/jquery.timeentry.min.js"></script>
+ <script type="text/javascript" src="js/plugins/ui/jquery.colorpicker.js"></script>
+ <script type="text/javascript" src="js/plugins/ui/jquery.jgrowl.js"></script>
+ <script type="text/javascript" src="js/plugins/ui/jquery.fancybox.js"></script>
+ <script type="text/javascript" src="js/plugins/ui/jquery.fileTree.js"></script>
+ <script type="text/javascript" src="js/plugins/ui/jquery.sourcerer.js"></script>
+
+ <script type="text/javascript" src="js/plugins/others/jquery.fullcalendar.js"></script>
+ <script type="text/javascript" src="js/plugins/others/jquery.elfinder.js"></script>
+
+ <script type="text/javascript" src="js/plugins/ui/jquery.easytabs.min.js"></script>
+ <script type="text/javascript" src="js/files/bootstrap.js"></script>
+ <script type="text/javascript" src="js/files/functions.js"></script>
+
+</head>
+
+<body>
+
+ <!-- Top line begins -->
+ <div id="top">
+  <div class="wrapper">
+   <a href="index.html" title="" class="logo"><h3>Administration 10</h3></a>
+
+   <!-- Right top nav -->
+   <div class="topNav">
+    <ul class="userNav">
+     <li><a title="" class="search"></a></li>
+     <li><a href="#" title="" class="screen"></a></li>
+     <li><a href="#" title="" class="settings"></a></li>
+     <li><a href="#" title="" class="logout"></a></li>
+     <li class="showTabletP"><a href="#" title="" class="sidebar"></a></li>
+    </ul>
+    <a title="" class="iButton"></a>
+    <div class="topSearch">
+     <div class="topDropArrow"></div>
+     <form action="">
+      <input type="text" placeholder="search..." name="topSearch" />
+      <input type="submit" value="" />
+     </form>
+    </div>
+   </div>
+
+   <!-- Responsive nav -->
+   <ul class="altMenu">
+    <li><a href="index.html" title="">Dashboard</a></li>
+    
+    <li><a href="qt-game-list.html" title=""><span>Quản trị game</span></a>
+     <ul>
+      <li><a href="qt-game-list.html" title="">Danh sách game</a></li>
+      <li><a href="qt-game-kichnguoichoi.html" title="">Kích người chơi</a></li>
+      <li><a href="qt-game-guithongbao.html" title="">Gửi thông báo</a></li>
+      <li><a href="qt-game-dongmogame.html" title="">Mở / Đóng game</a></li>
+      <li><a href="qt-game-bannick.html" title="">Ban / Bỏ ban nick</a></li>
+     </ul>
+    </li>
+    <li><a href="qt-tk-ccu.html" title=""><span>Thống kê</span></a>
+     <ul>
+      <li><a href="qt-tk-ccu.html" title="">Xem CCU</a></li>
+      <li><a href="tk-log.html" title="">Xem Log</a></li>
+     </ul>
+    </li>
+    <li><a href="qt-news-tintronggame.html" title=""><span>Quản trị tin tức / comments</span></a>
+     <ul>
+      <li><a href="qt-news-tintronggame.html" title="">Tin chạy trong game</a></li>
+      <li><a href="qt-news-danhsachtin.html" title="">Danh sách tin đăng</a></li>
+      <li><a href="qt-news-tinpopup.html" title="">Tin Pop Up</a></li>
+      <li><a href="qt-news-video.html" title="">Quản lý Video</a></li>
+     </ul>
+    </li>
+    <li><a href="qt-news-cm-danhsach.html" title=""><span>Quản lý comments</span></a>
+     <ul>
+      <li><a href="qt-news-cm-danhsach.html" title="">Danh sách comments</a></li>
+      <li><a href="qt-news-cm-danhsachxoa.html" title="">Danh sách đã xoá</a></li>
+     </ul>
+    </li>
+    <li><a href="qln-duyet.html" title=""><span>Quản lý nhóm</span></a>
+     <ul>
+      <li><a href="qln-duyet.html" title="">Danh sách nhóm</a></li>
+      <li><a href="qln-themdanhhieu.html" title="">Thêm danh hiệu</a></li>
+      <li><a href="qln-gandanhhieu.html" title="">Gán danh hiệu</a></li>
+      <li><a href="qln-danhhieucanhan.html" title="">Danh hiệu cá nhân</a></li>
+      <li><a href="qln-danghoatdong.html" title="">Đang hoạt động</a></li>
+      <li><a href="qln-xoakhoiphuc.html" title="">Xoá / Khôi phục</a></li>
+      <li><a href="qln-chuyentien.html" title="">Chuyển tiền</a></li>
+     </ul>
+    </li>
+    <li><a href="qt-news-ht-danhsachbai.html" title=""><span>Quản lý hỗ trợ</span></a>
+     <ul>
+      <li><a href="qt-news-ht-danhsachbai.html" title="">Danh sách bài</a></li>
+      <li><a href="qlht-taobaimoi.html" title="">Tạo bài mới</a></li>
+      <li><a href="qt-news-ht-refresh.html" title="">Refresh</a></li>
+     </ul>
+    </li>
+    <li><a href="dl-danhsach.html" title=""><span>Đại lý</span></a>
+     <ul>
+      <li><a href="dl-danhsach.html" title="">Danh sách</a></li>
+      <li><a href="dl-doitien.html" title="">Đổi tiền</a></li>
+      <li><a href="dl-chuyentien.html" title="">Chuyển tiền</a></li>
+      <li><a href="dl-thongkenap.html" title="">Thống kê nạp</a></li>
+     </ul>
+    </li>
+   </ul>
+
+   <div class="clear"></div>
+  </div>
+ </div>
+ <!-- Top line ends -->
+
+
+ <!-- Main content wrapper begins -->
+ <div class="errorWrapper">
+  <span class="errorNum">404</span>
+  <div class="errorContent">
+   <span class="errorDesc"><span class="icon-warning"></span>Oops! Sorry, an error has occured. Page not found!</span>
+   <div class="searchLine first">
+    <form action="">
+     <input type="text" name="search" class="ac" placeholder="Nhập từ tìm kiếm..." />
+     <button type="submit" name="find" value=""><span class="icos-search"></span></button>
+    </form>
+   </div>
+   <div class="fluid">
+    <a href="index.html" title="" class="buttonM bLightBlue grid6">Quay lại dashboard</a>
+    <a href="index.html" title="" class="buttonM bRed grid6">Về trang chủ 10</a>
+   </div>
+  </div>
+ </div>
+ <!-- Main content wrapper ends -->
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+Hiện tại có 2 quyền, user bình thường chính là user đăng nhập để chơi game, và user admin có quyền đăng nhập trang admin để quản lý

@@ -1,0 +1,148 @@
+/** 
+ *  Master Slider
+ *	version 1.5.7
+ * 	Core css file
+ */
+
+.master-slider{
+	position: relative;
+	visibility: hidden;
+}
+
+.master-slider.ms-fullheight{height: 100%;}
+
+.ms-layout-partialview .ms-view {
+	overflow: visible;
+	background-color:transparent;
+}
+.ms-layout-partialview { overflow: hidden; }
+
+.master-slider.before-init{}
+
+.master-slider img {max-width:none;}
+
+.ms-ie img{border:none;}
+.ms-ie8 * {opacity:inherit;filter:inherit;}
+.ms-ie7   {zoom:1;}
+
+.ms-loading-container{
+	position:absolute;
+	width:100%;
+	top:0;
+}
+
+.ms-loading-container .ms-loading,
+.ms-slide .ms-slide-loading {
+	width: 36px;
+	height: 36px;
+	background: url(../images/loading-2.gif) no-repeat center white;
+	border-radius: 60px;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -18px;
+	opacity: 0.9;
+}
+
+.ms-view { 
+	margin:0px auto;
+	overflow:hidden;
+	background:black;
+	position:relative;
+	-webkit-perspective: 2000px;
+	-moz-perspective: 2000px;
+	-ms-perspective: 2000px;
+	perspective: 2000px;
+}
+
+.ms-view .ms-slide-container{position:relative;}
+
+.ms-slide {
+	position:absolute;
+	-webkit-transform: translateZ(0px);
+	-moz-transform: translateZ(0px);
+	-ms-transform: translateZ(0px);
+	-o-transform: translateZ(0px);
+	transform: translateZ(0px);
+	
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	height:100%;
+}
+.ms-slide:hover .ms-slide-bgcont {
+	-webkit-animation-name: bounceIn;
+	animation-name: bounceIn;
+	-webkit-animation-duration: .4s;
+	animation-duration: .4s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;	
+}
+.ms-slide-bgcont:hover {
+	cursor: pointer;
+	background-image: url('../images/bgicon_actived.png');
+	background-size: 268px;
+	background-position: 12px 0px;
+	background-repeat: no-repeat;
+}
+.ms-staff-carousel{
+	max-width:840px;
+	overflow: hidden;
+	margin: 0px auto;
+	margin-top: 70px;
+	position: relative;
+}
+
+.ms-staff-carousel .ms-view{
+	overflow:visible;
+	background-color: transparent;
+}
+.ms-nav-prev, .ms-nav-next {
+	position: absolute;
+	display: block;
+	width: 76px;
+	height: 61px;
+	top: 180px;
+	cursor: pointer;	
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAA9CAYAAAAH6Y9PAAAC6klEQVR4nO2boU+cQRDFCeJyglQQRHMCRVAVBFFFEA26QTTVpKZVCBRBNKlo0E0FColoEJUIUlFFKqouFU0FQTQVlwoUOUF+Fd+lfDRwgTc7O5nm3j/w3szB/nZ39pua+g8FzAE/Ka+96NqKC+gAXxya9QnoRNdXXMCBQ7N+ALPRtRUXsO3QrHNgIbq24gKeOjTrEngSXVtxAY+AC4eGvYqurbiYEPHuwpeI016hF2gWRkX7Rm8vIj4o1Z9/A3eBvhjsK4Z9DRmJiP4LD4B5g28+IgKbhmBrBt8lshERWAGGYrBtg+9DshER6AG/xGAfDb5dEhKxA5yIwb5hoA/ZiDgKvScGOwcWDb47xVp0PZMrETcM4dYNvutl+nNNQ5yJaCHTbpDvOLkScRY4FYMdIy6o+BHxfeketUNPA0disDNgTvT1IqL8A941+Bsx2BBYNvh6EPE7zkS0LLYbBl8PIv7GmYiL6DcQ8q6ZpEScodlkKjpBvIEgIxFHwQ/FYAOgJ3r2yEbEUfAtMdglsCp6piXi6qhwRVsG3w/FWnQldyL2aP6lFB0afF8Xa9GV3IloGST0gRnR91mpDrXkS8RR8H0xnHzaB5bJSMRR+IiGeSzyn0v35rbwHZoJjqI+0BU8H+PzF/bCo0c3FTCPvugfiJ7Py/Xpr/zXsFYBa+jbik3RUz3cj9OAWq9t0IejQ2BF9FRPFuNkmh/UKkA6GtHs9NU1dJyO8NzptwqofvjG7yz5zqNHNxVQ/XoHP3K+LN2f2wqofoFI1t1/q4BdMeQFsCR6epwv65CTZghyLIY8RXx5jM8NRh1y0jyJPBNDSqTC746sGjkth+W3omd6clZ/KoDfrUY1clZ/jEJmcmJ/7qReNqYmZ9R1dr67/1b46gMTsk6XWgVEjORyzi9bBUQMfVPPA0I+bCA5OUM+nSHjK59okfEdWaTITs4IkfEtbLTI+rYsUmR8vRgtJuS8v5iQ834i41dv0cLxu8o/+Xh67jmrhOQAAAAASUVORK5CYII=);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 70%;
+}
+.ms-nav-prev {
+	left: 25px;
+}
+.ms-nav-next  {
+	right: 25px;
+	-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.mask-left, .mask-right {
+	position: absolute;
+	display: block;
+	width: 44px;
+	height: 400px;
+	top: 0px;
+	background-repeat: no-repeat;
+	
+}
+.mask-left {	
+	left: 78px;
+	background-position: left top;
+	background-image: url(../images/mask_left.png);
+	background-size: 75%;
+}
+.mask-right {
+	top: 2px;
+	right: 80px;
+	background-position: right top;
+	background-image: url(../images/mask_right.png);
+	background-size: 88%;
+	border: 0px solid red;
+}

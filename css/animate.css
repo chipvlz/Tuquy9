@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.bounceIn {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+@-webkit-keyframes bounceIn {
+  from, 33%, 66%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610);
+    animation-timing-function: cubic-bezier(0.215, 0.610);
+  }
+
+  0% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  33% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  66% {
+    -webkit-transform: scale3d(.94, .94, .94);
+    transform: scale3d(.94, .94, .94);
+  } 
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounceIn {
+  from, 33%, 66%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610);
+    animation-timing-function: cubic-bezier(0.215, 0.610);
+  }
+
+  0% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  33% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  66% {
+    -webkit-transform: scale3d(.94, .94, .94);
+    transform: scale3d(.94, .94, .94);
+  } 
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}

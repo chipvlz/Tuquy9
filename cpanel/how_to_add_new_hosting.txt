@@ -1,0 +1,26 @@
+1./ Create folder of website:
+sudo mkdir -p /var/www/<web-name>/public_html
+
+2./ Permision folder:
+sudo chown -R root:root /var/www/<web-name>/public_html
+
+
+3./ create file with web-name in folder: /etc/httpd/sites-available
+EX: vi /etc/httpd/sites-available/<web-name>.conf
+
+4./ Add multi row below:
+<VirtualHost *:80>
+    ServerName www.<web-name>
+    ServerAlias <web-name>
+    DocumentRoot /var/www/<web-name>/public_html
+</VirtualHost>
+
+5./ Enable the New Virtual Host Files
+sudo ln -s /etc/httpd/sites-available/example.com.conf /etc/httpd/sites-enabled/example.com.conf
+
+6./ restart apache
+sudo systemctl restart httpd.service
+
+***/
+In PHP. To be using imagecreatefromgif, imagecreatefromjpeg, imagecreatefrompng need to be install GD Extend
+yum -y install php-gd

@@ -489,8 +489,8 @@
                 			
                 		</div>
                 		
-                		<div id="btGemSessionRanking"><img src="/images/icon_money1.png"><div><p>GEM</p></div></div>
-                		<div id="btXuSessionRanking"><img src="/images/icon_money2.png"><div><p>XU</p></div></div>
+                		<div id="btGemSessionRanking" class='txRanking'><img src="/images/icon_money1.png"><div><p>GEM</p></div></div>
+                		<div id="btXuSessionRanking" class='txRanking active'><img src="/images/icon_money2.png"><div><p>XU</p></div></div>
                 		<div class="clear"></div>
                 	</div>
                 </div>
@@ -572,10 +572,10 @@
                 		<div class="btnBetLevel" data-betvalue="100000" data-betroomlimit="100K">
                 			<div class="textBet">100k</div>
                 		</div>
-                		<div class="btnBetLevel deactived" data-betvalue="250000" data-betroomlimit="250K">
+                		<div class="btnBetLevel" data-betvalue="250000" data-betroomlimit="250K">
                 			<div class="textBet">250k</div>
                 		</div>		
-                		<div class="btnBetLevel deactived" data-betvalue="500000" data-betroomlimit="500K">
+                		<div class="btnBetLevel" data-betvalue="500000" data-betroomlimit="500K">
                 			<div class="textBet">500k</div>
                 		</div>
                 	</div>
@@ -655,20 +655,6 @@
     	};
     	socket.emit(channel_main, jsonObject);
     });
-
-	$('#btGemSession.btnGemHis').click(function(){
-		$('.gemHis').show();
-		$('.xuHis').hide();
-		$(this).addClass('active');
-		$('#btXuSession.btnXuHis').removeClass('active');
-	});
-
-	$('#btXuSession.btnXuHis').click(function(){
-		$('.gemHis').hide();
-		$('.xuHis').show();
-		$(this).addClass('active');
-		$('#btGemSession.btnGemHis').removeClass('active');
-	});
 
 	$('#btGemSession.btnGemQCTT').click(function(){
 		$('.qcttGem').show();
